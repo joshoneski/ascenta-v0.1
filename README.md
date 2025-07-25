@@ -1,8 +1,8 @@
-# Little Phil Ignite
+# Ascenta v0.1
 
 > AI-powered fundraising & marketing suite for charities
 
-**Little Phil Ignite** is an enterprise-grade platform that empowers charities to slash fundraising costs, enrich donor data, and grow impact through AI-automated outreach campaigns.
+**Ascenta v0.1** is an enterprise-grade platform that empowers charities to slash fundraising costs, enrich donor data, and grow impact through AI-automated outreach campaigns.
 
 ## 🚀 Quick Start
 
@@ -14,8 +14,8 @@
 ### Environment Setup
 ```bash
 # Clone and install dependencies
-git clone <repository-url>
-cd ascenta-plus-development
+git clone https://github.com/joshoneski/ascenta-v0.1.git
+cd ascenta-v0.1
 npm install
 
 # Configure environment variables
@@ -38,7 +38,7 @@ The application will be available at:
 
 ### Monorepo Structure
 ```
-ascenta-plus-development/
+ascenta-v0.1/
 ├── apps/
 │   └── web/                    # Main Next.js application
 ├── packages/
