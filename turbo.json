@@ -1,0 +1,55 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "ui": "tui",
+    "tasks": {
+        "@ascenta-plus/web#build": {
+            "dependsOn": [
+                "^build"
+            ],
+            "env": [
+                "APP_ENV",
+                "APOLLO_API_KEY",
+                "BETTER_AUTH_SECRET",
+                "HOST_DOMAIN",
+                "INNGEST_EVENT_KEY",
+                "INNGEST_SIGNING_KEY",
+                "OPENAI_API_KEY",
+                "SENDGRID_API_KEY",
+                "SLACK_SUPPORT_WEBHOOK_URL",
+                "RESEND_API_KEY",
+                "POSTGRES_URL"
+            ],
+            "outputs": [
+                ".next/**",
+                "!.next/cache/**"
+            ]
+        },
+        "build": {
+            "dependsOn": [
+                "^build"
+            ],
+            "inputs": [
+                "$TURBO_DEFAULT$",
+                ".env*"
+            ],
+            "outputs": [
+                ".next/**",
+                "!.next/cache/**"
+            ]
+        },
+        "lint": {
+            "dependsOn": [
+                "^lint"
+            ]
+        },
+        "check-types": {
+            "dependsOn": [
+                "^check-types"
+            ]
+        },
+        "dev": {
+            "cache": false,
+            "persistent": true
+        }
+    }
+}

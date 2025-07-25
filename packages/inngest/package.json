@@ -1,0 +1,8 @@
+{
+    "name": "@ascenta-plus/inngest",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "npx --yes inngest-cli@latest dev -p 3202"
+    }
+}

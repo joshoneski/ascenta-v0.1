@@ -1,0 +1,16 @@
+{
+    "name": "@ascenta-plus/emails",
+    "version": "1.0.0",
+    "private": "true",
+    "scripts": {
+        "dev": "email dev -p 3201"
+    },
+    "dependencies": {
+        "@react-email/components": "0.1.1",
+        "react": "19.1.0",
+        "react-dom": "19.1.0"
+    },
+    "devDependencies": {
+        "react-email": "4.0.17"
+    }
+}
